@@ -6,7 +6,7 @@ $streams_result = mysqli_query($conn, $streams_query);
 
 <section class="hero-container">
     <div class="hero-content">
-        <h1 class="hero-title">Your Future in Morocco Starts Here</h1>
+        <h1 class="hero-title">aaaaaaa</h1>
         <p class="hero-subtitle">Smart matching for Baccalaureate students.</p>
 
         <div class="hero-form-box" id="hero-form-box">
