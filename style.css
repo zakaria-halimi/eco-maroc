@@ -1,0 +1,281 @@
+:root {
+    --navbar-bg: #ffffff;
+    --navbar-text: #374151;
+    --navbar-primary: #075985;
+    --navbar-font: 'Inter', sans-serif;
+}
+
+.navbar-container {
+    width: 100%;
+    background-color: var(--navbar-bg);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.75rem 2rem;
+    font-family: var(--navbar-font);
+}
+
+.navbar-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo overlapping styles */
+.navbar-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo-image {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.navbar-menu-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-links-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link-item {
+    text-decoration: none;
+    color: var(--navbar-text);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.navbar-btn-primary {
+    background-color: var(--navbar-primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 2. Mobile Styles (Hadchi li derti nta bo7dou f tswira) */
+.navbar-mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-mobile-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--navbar-primary);
+}
+
+@media (max-width: 768px) {
+    .navbar-mobile-toggle {
+        display: flex;
+    }
+
+    .navbar-menu-content {
+        display: none;
+        /* Khfya f tlifon hta t-cliqui */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar-menu-content.is-open {
+        display: flex;
+    }
+
+    .navbar-links-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-btn-primary {
+        width: 100%;
+    }
+}
+
+/* head-1 */
+
+
+/* Hero Section Styles */
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    /* Kat-khod t9riban l-ecran kamla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* Dir tswira dyalk hna wast l-url */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1523050853064-952462933923?q=80&w=2070') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Styling */
+/* Layout Update for Form */
+.hero-form-box {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    /* Adapts to content size "tsghar" */
+    max-width: 95%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+/* fit-content handles sizing, so compact-mode overrides are no longer needed */
+
+.hero-main-form {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.hero-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    /* Distribute space */
+    min-width: 140px;
+    /* Prevent crushing */
+}
+
+/* Adjust specific inputs for better proportions */
+.hero-input-group:nth-child(1) {
+    flex: 1.5;
+    min-width: 180px;
+}
+
+/* Major */
+.hero-input-group:nth-child(2) {
+    flex: 0.8;
+    min-width: 120px;
+}
+
+/* Sector */
+.hero-input-group:nth-child(3) {
+    flex: 1.2;
+    min-width: 160px;
+}
+
+/* Stream */
+.hero-input-group:nth-child(4) {
+    flex: 0.6;
+    min-width: 80px;
+}
+
+/* Grade */
+
+.hero-label {
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.hero-field {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #1f2937;
+    background-color: #f9fafb;
+    height: 42px;
+    /* Fixed height for alignment */
+}
+
+.hero-submit-btn {
+    background-color: #075985;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+    height: 42px;
+    /* Match input height */
+    flex: 0 0 auto;
+    /* Don't shrink */
+}
+
+.hero-submit-btn:hover {
+    background-color: #0369a1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+
+    /* Increased breakpoint for better wrapping */
+    .hero-main-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-form-box {
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-input-group {
+        width: 100%;
+    }
+}

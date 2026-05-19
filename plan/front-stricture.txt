@@ -1,0 +1,24 @@
+
+
+/UniWay Maroc
+ ├── index.php
+ ├
+ ├── /compoments
+ ├   ├── navbar.php
+ ├   ├── head-1.php
+ ├   ├  ├──  head-1  ──  page-2
+ ├   ├      ├── navbar-back.php
+ ├   ├      ├── les ecoles de searsh.php
+ ├   ├
+ ├   ├
+ ├   ├── head-2.php
+ ├   ├── head-3.php
+ ├
+ ├
+ ├── style.css
+ ├── script.js
+ ├── /les images
+
+
+
+ 
