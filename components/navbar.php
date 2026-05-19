@@ -14,7 +14,7 @@
 
         <div class="navbar-menu-content" id="navbar-menu">
             <ul class="navbar-links-list">
-                <li><a href="#" class="navbar-link-item">Explore Schools</a></li>
+                <li><a href="#" class="navbar-link-item">yahay</a></li>
                 <li><a href="#" class="navbar-link-item">Bac Guidance</a></li>
                 <li><a href="#" class="navbar-link-item">Scholarships</a></li>
                 <li><a href="#" class="navbar-link-item">Cities</a></li>
