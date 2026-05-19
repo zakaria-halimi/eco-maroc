@@ -16,7 +16,7 @@
             <ul class="navbar-links-list">
                 <li><a href="#" class="navbar-link-item">yahay</a></li>
                 <li><a href="#" class="navbar-link-item">reda</a></li>
-                <li><a href="#" class="navbar-link-item">Scholarships</a></li>
+                <li><a href="#" class="navbar-link-item">zakaria</a></li>
                 <li><a href="#" class="navbar-link-item">Cities</a></li>
             </ul>
             <div class="navbar-actions">
